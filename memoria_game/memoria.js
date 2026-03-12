@@ -22,7 +22,7 @@ function inizializzaGioco(){
     let mazzoMescolato=mescola(mazzo);
     for(let i=0;i<mazzoMescolato.length;i++){
         let cartaAttuale=carte[i];
-        cartaAttuale.innerText=mazzoMescolato(i);
+        cartaAttuale.innerText=mazzoMescolato[i];
         cartaAttuale.classList.remove("scoperta");
         cartaAttuale.classList.add("nascosta");
         cartaAttuale.onclick=giraCarta;
@@ -54,7 +54,7 @@ function giraCarta(){
         }
     }
 }
-reset.onClick=inizializzaGioco;
+reset.onclick=inizializzaGioco;
 inizializzaGioco();
 
 if ("serviceWorker" in navigator) {
@@ -63,3 +63,4 @@ if ("serviceWorker" in navigator) {
     .catch((err) => console.log("Errore Service Worker: ", err));
 
 }
+
