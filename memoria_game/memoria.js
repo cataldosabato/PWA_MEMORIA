@@ -23,8 +23,8 @@ function inizializzaGioco(){
     for(let i=0;i<mazzoMescolato.length;i++){
         let cartaAttuale=carte[i];
         cartaAttuale.innerText=mazzoMescolato(i);
-        carta.classList.remove("scoperta");
-        carta.classList.add("nascosta");
+        cartaAttuale.classList.remove("scoperta");
+        cartaAttuale.classList.add("nascosta");
         cartaAttuale.onclick=giraCarta;
     }
 }
@@ -61,4 +61,5 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("serviceworker.js")
     .then(() => console.log("Service Worker registrato con successo!"))
     .catch((err) => console.log("Errore Service Worker: ", err));
+
 }
