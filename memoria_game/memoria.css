@@ -52,12 +52,13 @@ body{
 
 
 .card.nascosta {
-    color: transparent; 
-    cursor: pointer; 
+    font-size: 0; 
+    cursor: pointer;
 }
 
 
 .card.scoperta {
-    color: #000000; 
-    cursor: default; 
+    font-size: 2rem; 
+    cursor: pointer;
+
 }
