@@ -1,0 +1,17 @@
+{
+	"lang": "en-us",
+	"name": "Gioco della memoria app",
+	"short_name": "Gioco della memoria",
+	"description": "Un semplice gioco della memoria che permette di contare le mosse e di resettare per ricominciare da zero",	
+    "start_url": ".",
+	"background_color": "#2f3d58",
+	"theme_color": "#2f3d58",
+	"orientation": "any",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "icona.png",
+			"sizes": "512x512"
+		}
+	]
+}

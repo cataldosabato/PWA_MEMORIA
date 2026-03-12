@@ -1,0 +1,63 @@
+html{
+    background: rgb(243,243,243);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15pt;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+#game-grid {
+    display: grid;
+    /* Crea 4 colonne di uguale dimensione */
+    grid-template-columns: repeat(4, 1fr); 
+    /* Spazio tra le carte */
+    gap: 10px; 
+    /* Larghezza massima per non farlo diventare gigante su desktop */
+    width: 90vw;
+    max-width: 400px; 
+    margin-top: 20px;
+}
+#reset {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reset:active {
+    background-color: #0056b3;
+}
+
+.card {
+    background-color: #ffffff; 
+    aspect-ratio: 1 / 1; 
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: transform 0.2s; 
+    user-select: none; 
+}
+
+
+.card.nascosta {
+    color: transparent; 
+    cursor: pointer; 
+}
+
+
+.card.scoperta {
+    color: #000000; 
+    cursor: default; 
+}
